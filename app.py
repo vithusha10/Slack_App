@@ -86,9 +86,6 @@ def slack_slash_command():
 
 
 if __name__ == "__main__":
-    # Start ngrok tunnel
-    # public_url = ngrok.connect(5000).public_url
-    # print(f"🚀 Ngrok Tunnel: {public_url}/slack/slash_command")
 
     # Run Flask app
     flask_app.run(port=5000, debug=True)
