@@ -68,7 +68,7 @@ def create_salesforce_lead(first_name, last_name, email, company, phone):
 
 
 # Flask Route to Handle Slack command
-@flask_app.route("/slack/slashcommand", methods=["POST"])
+@flask_app.route("/slack/slash_command", methods=["POST"])
 def slack_slash_command():
     fname, lname, email = request.form.get("text").split(' ')
     create_salesforce_lead(first_name=fname, last_name=lname, email=email, company='3x and co', phone='1234567890')
@@ -88,7 +88,7 @@ def slack_slash_command():
 if __name__ == "__main__":
     # Start ngrok tunnel
     # public_url = ngrok.connect(5000).public_url
-    # print(f"🚀 Ngrok Tunnel: {public_url}/slack/slashcommand")
+    # print(f"🚀 Ngrok Tunnel: {public_url}/slack/slash_command")
 
     # Run Flask app
     flask_app.run(port=5000, debug=True)
