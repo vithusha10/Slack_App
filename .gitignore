@@ -1,0 +1,66 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.env/
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MyPy
+.mypy_cache/
+
+# Pytest
+.cache/
+
+# PyCharm
+*.iml
+
+# Test files
+*.log
+*.bak
+
+# Environment variables files
+.env
+
+# Python coverage reports
+coverage.xml
+*.cover
+*.hypothesis/
+.noseids
+
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+staticfiles/
+media/
+
+# Flask
+instance/
+.webassets-cache
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+backup_app.py
+main.py
